@@ -8,48 +8,52 @@
     text-decoration: none;
     list-style: none;
 }
+:root{
+    --body:#000000ec;
+    --menu:#535353;
+    --header:white;
+    --table:#5c5b5ba9;
+    --text-white:#ffffff;
+    --text-2:#b8b8b8;
+    --text-black:#000000;
+}
 
 body{
-    display: grid;
+    background-color: var(--body);
+    display: block;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    width: 1400px;
+    width: 100%;
 }
 header{
-    background-color: rgb(178, 178, 182);
-    width: 200px;
-    
-
-}
-main{
-    margin: 0 0 0 200px;
-}
-main>section{
-    margin: 20px;
-    text-align: center;
-}
-header>nav{
-    
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 220px;
+    height: 0;
+}
+header>nav{
+    background-color: var(--header);
+    margin: 20px;
+    height: 100vh;
+}
+header nav ul li a{
+    color: var(--text-black);
+    font-weight: bold;
 }
 div.tabela{
-    margin: 0 0 0 200px;
-    display: block;
-
+    color: var(--text-white);
+    width: 100%;
 }
 table{
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-collapse: collapse;
     width: 400px;
     
 }
 th,td{
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     text-align: center;
     padding: 5px;
 }
@@ -59,4 +63,15 @@ td.num{
 td.num-person{
     text-align: right;
     
+}
+main{
+    background-color: var(--menu);
+    display: flex;
+    flex-wrap: wrap;
+}
+main>section{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
 }
