@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style:none;
+}
+
+:root{
+
+    /*===Paleta===*/
+    --cor-1:#000000;
+    --cor-2:#ffffff;
+    --cor-3:#b4b4b4;
+    --cor-4:#838282;
+    --cor-5:#3f3f3f;
+    --cor-3-transp:#b4b4b493;
+    --cor-4-transp:#83828293;
+    --cor-5-transp:#3f3f3f93;
+    
+    /*===Transition===*/
+    --trans-2: .2s;
+    --trans-3: .3s;
+    --trans-4: .4s;
+    --trans-5: .5s;
+    --trans-6: .6s;
+    --trans-7: .7s;
+    --trans-8: .8s;
+    /*===Fontes===*/
+    
+    /**/
+}
+/*====cabeçalho====*/
+body{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    background-color:var(--cor-3);
+
+}
+/*=====Barra do menu Fixa=====*/
+.menu-bar{
+    border: 1px solid var(--cor-3-transp);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-2);
+}
+/*=============================*/
+
+/*=====Caixa do menu=====*/
+.menu{
+    display: flex;
+    margin: 5px 5%;
+    justify-content: center;
+    
+}
+/*==============================*/
+
+/*=====Itens dentro do menu=====*/
+.menu>li{
+    display: block;
+    margin: 0 5%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.menu li:hover{  
+    background-color: var(--cor-3-transp);
+    border-radius: 6px;
+    transition: var(--trans-3);
+}
+
+.menu li a i{
+    color: gray;
+    font-size: 1.5rem;
+}
+/*====================================================================*/
+
+
+/*====Conteudo====*/
+main{
+    display: block;
+    background-color:var(--cor-2) ;
+    width: 100%;
+    margin-top: 100px;
+}
+section{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+article{
+    background-color: aquamarine;
+    text-align: justify;
+}
+/*======Mobile======*/
+
+@media(max-width:700px){
+    .menu-bar{
+        border: 1px solid var(--cor-3-transp);
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        top:calc(100vh - 60px);
+        left: 0;
+        background-color: var(--cor-2);
+    }
+}
+/*======================================*/
