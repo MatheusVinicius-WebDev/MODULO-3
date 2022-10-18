@@ -13,9 +13,10 @@
     --color-body:#dadada;
     --color-sections:#cfcfcfd2;
     --color-text:#000000;
-    --color-menu:#fffffff5;
+    --color-menu:#ecececf5;
     --color-hover-menu:#b1aeae;
     --color-hover-body:#caebff;
+    --color-logo:#0000ff1e;
 }
 body{
     background-color: var(--color-body);
@@ -23,7 +24,7 @@ body{
     max-width: 80%;
 }
 .sidebar{
-    border-radius: 0  0 50px 50px;
+    border-radius: 0  0 38px 38px;
     background-color: var(--color-menu);
     display: block;
     width: 100%;
@@ -41,11 +42,13 @@ body{
     color: var(--color-text);
     text-align: center;
     padding: 15px;
-    border-radius: 6px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 .menu li a:hover{
     transition: .4s;
-    background-color:var(--color-hover-menu);
+    background-color:var(--color-logo);
+    color: blue;
     
 }
 /*=====MAIN======*/
@@ -58,9 +61,9 @@ main{
     display: block;
 }
 .logo {
-    background-color: rgba(0, 0, 255, 0.116);
+    background-color:var(--color-logo);
     display: flex;
-    color: rgb(0, 38, 255);
+    color: #0026ff;
     width: 300px;
     height: 300px;
     align-items: center;
@@ -68,18 +71,13 @@ main{
 }
 .logo p{
     text-align: center;
-    background-color: #0000ff15;
+    background-color:var(--color-logo);
     color: #0e31f8;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.24);
+    text-shadow: 4px 4px 5px #0000003d;
     font-size: 4rem;
     margin: 0 auto;
-    border-radius: 100% 00% 100% 00%;
-    
-}
-
-.box-logo-2{
-
-
+    border-radius: 100% 0% 200% 0%;
+    font-weight: bold;
 }
 .box-text{
     display: block;
@@ -92,3 +90,28 @@ main{
     margin-bottom: 30px;
     font-size: 2rem;
 }
+.table{
+    background-color:#9da9f0c2 ;
+    display: block;
+    margin: 0 auto;
+    
+}
+table{
+    width: 100%;
+    text-align: center;
+    
+}
+th ,td{
+    padding: 10px;
+}
+footer{
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer>p
