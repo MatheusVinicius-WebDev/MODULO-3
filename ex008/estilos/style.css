@@ -23,14 +23,20 @@ body{
     margin: 0 auto;
     max-width: 80%;
 }
+header{
+    position: relative;
+}
 .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
     border-radius: 0  0 38px 38px;
     background-color: var(--color-menu);
     display: block;
     width: 100%;
 }
 .menu{
-    height: 70px;
+    height:70px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -54,6 +60,7 @@ body{
 /*=====MAIN======*/
 
 main{
+    
     display: block;
     margin: 0 auto;
 }
@@ -114,4 +121,3 @@ footer{
     align-items: center;
 
 }
-footer>p

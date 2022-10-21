@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Tabelas</title>
+    <style>
+        /*Tabelas 1 e 2*/
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+        body{
+            height:100vh ;
+            max-width: 80%;
+            margin: 0 auto;
+            background-image: linear-gradient(to bottom,
+             #0000ff 10%,
+             #0000ffd5 16%,
+             #0000ffbe 30%,
+             #0000ffad 50%,
+             #0000ff8c 70%,
+             #0000ff6b 100%);
+
+        }
+        .table-1 ,.table-2{
+            background-color: white;
+            margin-top: 10px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .table-1 td, .table-2 td{
+            border: 1px solid black;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+
+        /*tabela 3*/
+
+        .table-3{
+            margin-top: 10px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .table-3 th{
+            background-color: lightgray;
+            border: 1px solid rgba(0, 0, 0, 0.705);
+            height: 40px;
+        }
+        .table-3 td{
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="table-1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <table class="table-2">
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <table class="table-3">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Genero</th>
+                <th>Escolaridade</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matheus</td>
+                <td>24</td>
+                <td>Masculino</td>
+                <td>Ensino Medio</td>
+                <td>Completo</td>
+            </tr>
+            <tr>
+                <td>Leticia</td>
+                <td>27</td>
+                <td>Feminino</td>
+                <td>Ensino Superior</td>
+                <td>Completo</td>
+            </tr>
+            <tr>
+                <td>Rosineia</td>
+                <td>54</td>
+                <td>Feminino</td>
+                <td>Ensino Medio</td>
+                <td>Completo</td>
+            </tr>
+            <tr>
+                <td>Rogerio</td>
+                <td>34</td>
+                <td>Masculino</td>
+                <td>Ensino Superior</td>
+                <td>Completo</td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
