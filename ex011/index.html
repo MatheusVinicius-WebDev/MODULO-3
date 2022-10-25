@@ -10,43 +10,94 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            width: 800px;
             border-collapse: collapse;
         }
         th,td{
             border: 1px solid gray;
             font-size: 1.3rem;
-            padding: 10px;
+            padding: 6px 0;
+
         }
+        .destaque{
+            background-color: rgb(177, 177, 177);
+        }
+        div#container{
+            overflow-x: scroll
+            /* Efeito Zebrado 
+            class ou id : nth-child(2n)[ 2n aplica propriedades em todas as linhas pares ]
+                                       [ 5n aplica na quinta linha as propriedades]
+                                       ou
+            class ou id :nth-child(odd)[2n-1][Impar]
+            class ou id :nth-child(even)[2n][Par] */
+        } 
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col" rowspan="2" >Aréa</th>
-                <th scope="col" rowspan="2">Diciplinas</th>
-                <th scope="colgroup" rowspan="2" colspan="2"></th>
-                <th scope="col" rowspan="2">Média</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="rowgroup" rowspan="4">Exatas</th>
-                <td>Matematica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            
-
-        </tbody>
-    </table>
+    <div id="container">
+        <table>
+            <thead>
+                <tr class="destaque">
+                    <th scope="col" rowspan="2" >Aréa</th>
+                    <th scope="col" rowspan="2" >Diciplinas</th>
+                    <th scope="colgroup" rowspan="1" colspan="2" >Notas</th>
+                    <th scope="col" rowspan="2" >Média</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="destaque">Nota 1</th>
+                    <th scope="col" class="destaque">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
+                    <td>Matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="destaque">
+                    <th scope="row" colspan="4" >Média de Exatas</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="destaque">
+                    <th scope="row" colspan="4">Média de Humanas</th>
+                    <td>0.0</td>
+                </tr>
+        
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
